@@ -24,6 +24,25 @@
   </el-table>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import emptyImg from '../assets/imgs/emptydata.png'
+
+defineProps({
+  tableData: {
+    type: Array,
+    default: () => [],
+  },
+  columnList: {
+    type: Array,
+    default: () => [],
+  },
+  loading: {
+    type: Boolean,
+    default: false,
+  },
+})
+
+const types = ['selection', 'index', 'expand']
+</script>
 
 <style lang="scss" scoped></style>
