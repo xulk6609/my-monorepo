@@ -17,6 +17,9 @@ importers:
       '@monorepo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@monorepo/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       pinia:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.9.2)(vue@3.5.22(typescript@5.9.2))
@@ -38,6 +41,8 @@ importers:
         version: 8.0.2(vite@7.1.7(@types/node@22.18.7)(jiti@2.6.0))(vue@3.5.22(typescript@5.9.2))
 
   packages/ui: {}
+
+  packages/utils: {}
 
 packages:
 
