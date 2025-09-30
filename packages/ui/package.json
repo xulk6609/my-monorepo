@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "source": "src/main.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  }
+}
+
