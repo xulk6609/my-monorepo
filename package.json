@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:vue3": "pnpm --filter vue3-app dev",
+    "dev:react": "pnpm --filter react-app dev",
+    "dev:nuxt": "pnpm --filter nuxt-app dev",
+    "build:vue3": "pnpm --filter vue3-app build",
+    "build:react": "pnpm --filter react-app build",
+    "build:nuxt": "pnpm --filter nuxt-app build"
+  }
+}
