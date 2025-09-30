@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { getMapToArray } from '@monorepo/utils'
+import { useCounter } from '@monorepo/hook'
 import { ref } from 'vue'
+
+const { count, increment, decrement, reset } = useCounter(5)
 
 const value = ref('测试 vue3')
 
@@ -20,6 +23,12 @@ const arrayData = ref(getMapToArray(nameMap, 'code'))
   </p>
   <div>
     {{ arrayData }}
+  </div>
+  <div>
+    <p>计数：{{ count }}</p>
+    <el-button @click="increment">增加</el-button>
+    <el-button @click="decrement">减少</el-button>
+    <el-button @click="reset">重置</el-button>
   </div>
 </template>
 
