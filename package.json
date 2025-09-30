@@ -12,5 +12,8 @@
     "build:vue3": "pnpm --filter vue3-app build",
     "build:react": "pnpm --filter react-app build",
     "build:nuxt": "pnpm --filter nuxt-app build"
+  },
+  "dependencies": {
+    "element-plus": "^2.11.4"
   }
 }
